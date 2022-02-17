@@ -20,8 +20,10 @@ struct ContentView: View {
           .listRowInsets(EdgeInsets())
         
         ForEach(animals) { animal in
-          AnimalListItemView(animal: animal)
-            .listRowBackground(Color.clear)
+          NavigationLink(destination: AnimalDetailView(animal: animal)) {
+            AnimalListItemView(animal: animal)
+              .listRowBackground(Color.clear)
+          }
         }
       }
       .listStyle(.plain)
