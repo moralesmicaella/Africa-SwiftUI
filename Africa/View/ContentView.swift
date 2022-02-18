@@ -27,7 +27,8 @@ struct ContentView: View {
         }
       }
       .listStyle(.plain)
-      .navigationBarTitle("Africa", displayMode: .large)
+      .navigationTitle("Africa")
+      .navigationBarTitleDisplayMode(.large)
     }
     .navigationViewStyle(.stack)
   }
