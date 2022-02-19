@@ -50,6 +50,10 @@ struct ContentView: View {
                   .listRowBackground(Color.clear)
               }
             }
+            
+            CreditsView()
+              .frame(height: 220)
+              .modifier(CenterModifier())
           }
           .listStyle(.plain)
         } else {
@@ -95,7 +99,6 @@ struct ContentView: View {
         }
       }
     }
-    .navigationViewStyle(.stack)
   }
 }
 
